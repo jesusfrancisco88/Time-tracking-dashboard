@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+html {
+  font-family: "Rubik", sans-serif;
+
+  /* Colors */
+  --blue-100: hsl(236, 100%, 87%);
+  --blue-200: hsl(235, 45%, 61%);
+  --blue-300: hsl(195, 74%, 62%);
+  --blue-500: hsl(246, 80%, 60%);
+  --blue-700: hsl(236, 41%, 34%);
+  --blue-800: hsl(235, 46%, 20%);
+  --blue-900: hsl(226, 43%, 10%);
+  --red-200: hsl(15, 100%, 70%);
+  --red-500: hsl(348, 100%, 68%);
+  --lime-green-500: hsl(145, 58%, 55%);
+  --violet-500: hsl(264, 64%, 52%);
+  --orange-400: hsl(43, 84%, 65%);
+
+  /* Fonts */
+  --font-size-h1: clamp(2.4rem, 1.8366rem + 1.5023vw, 4rem);
+  --font-size-time-window: 1.8rem;
+  --font-size-activity-name: 1.8rem;
+  --font-size-activity-result: clamp(3.2rem, 2.3549rem + 2.2535vw, 5.6rem);
+  --font-size-activity-window: 1.5rem;
+
+  --z-index-top: 10;
+  --z-index-middle: 5;
+  --z-index-bottom: 1;
+
+  --br: 1.5rem;
+}
+
+body {
+  width: 100%;
+}
