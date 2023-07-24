@@ -106,14 +106,22 @@ let data = [
 const buttons = document.querySelectorAll('.activity-tracker__option');
 
 
-
 const activateClickedButton = (button) => {
   buttons.forEach(b => b.classList.remove('active'));
   button.classList.add('active');
 }
 
+
+const clearActivities = () => {
+  const activities = document.querySelectorAll('.activity-tracker__activity');
+  // Remover actividades al renderizar otra opcion (Daily,Weekly,Monthly);
+  activities.forEach( clear => clear.remove() );
+}
+
+
 const renderCards = function (clickedOption) {
 
+  clearActivities();
   const activityTracker = document.querySelector('.activity-tracker');
 
   const calcTimeFrame = (option) => {
@@ -166,3 +174,5 @@ buttons.forEach(button => {
   });
 
 });
+
+buttons[1].click();
